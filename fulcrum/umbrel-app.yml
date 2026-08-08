@@ -4,7 +4,7 @@ implements:
   - electrs
 category: bitcoin
 name: Fulcrum
-version: "2.0.0"
+version: "2.1.1-patch.1"
 tagline: A fast and nimble Electrum Server
 description: >-
   Run your personal Electrum server and connect your Electrum-compatible wallet,
@@ -30,13 +30,18 @@ gallery:
 path: ""
 defaultPassword: ""
 releaseNotes: >-
-  🚨 This update will automatically trigger a full re-sync of your Fulcrum index. During the
-  re-sync, wallets connected to Fulcrum won't be able to connect.
+  This security update upgrades the bundled Tor sidecar to 0.4.9.11, restoring Tor connectivity and including the latest Tor security fixes. The primary app version is unchanged.
 
 
-  Fulcrum is now far more resilient to restarts, shutdowns, and power loss, avoiding the database corruption issues that notoriously plagued previous versions.
+  Fulcrum 2.1.1 is a maintenance update with bug fixes and small protocol improvements.
 
 
-  Full Fulcrum release notes are available at https://github.com/cculianu/Fulcrum/releases/tag/v2.0.0
+  Key improvements:
+    - Added new Electrum RPC methods for checking address and scripthash status without subscribing
+    - Improved peer connection throttling to avoid excessive connection churn
+    - Reduced the amount of rollback work after an unclean shutdown
+
+
+  Full release notes are available at https://github.com/cculianu/Fulcrum/releases/tag/v2.1.1
 backupIgnore:
   - data/fulcrum/fulc2_db

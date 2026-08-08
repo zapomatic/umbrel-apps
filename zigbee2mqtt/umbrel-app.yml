@@ -3,7 +3,7 @@ id: "zigbee2mqtt"
 name: "Zigbee2MQTT"
 tagline: "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges"
 category: "automation"
-version: "2.6.2"
+version: "2.13.0"
 port: 60082
 description: >-
   Allows you to use your Zigbee devices without the vendor's bridge or gateway.
@@ -40,16 +40,18 @@ gallery:
   - 2.jpg
   - 3.jpg
 releaseNotes: >-
-  This release includes various improvements and fixes:
-    - Support for many new devices
-    - Improvements to existing device integrations
-    - Various bug fixes and stability enhancements
+  This update also includes Zigbee2MQTT 2.11.0's security default that disables external extensions and external converters for new installations. Existing users who rely on them can enable `advanced.enable_external_js` if needed.
 
 
-  ⚠️ The new Windfront frontend is now the default frontend. Feedback can still be provided. Special thanks to @Nerivec for all his hard work!
+  Key highlights include:
+    - Added support for 51 new Zigbee devices
+    - Added a clear cache option when removing devices
+    - Improved Home Assistant discovery for Tuya infrared receivers and emitters
+    - Improved support and behavior for SONOFF, Shelly, Aqara, Tuya, Philips Hue, NodOn, Sunricher, and other devices
+    - Fixed Home Assistant action topics, restart-required flags, group publishing on device leave, and many device definitions/detections
 
 
-  Full release notes can be found at https://github.com/Koenkk/zigbee2mqtt/releases
+  Full release notes can be found at https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.13.0
 dependencies:
   - mosquitto
 path: ""

@@ -2,7 +2,7 @@ manifestVersion: 1
 id: plex
 category: media
 name: Plex
-version: "1.42.1.10054-gpu"
+version: "1.43.3.10828"
 tagline: Stream Movies & TV Shows
 description: >-
   Stream movies and TV shows, plus 300+ channels of live TV, instantly, without a subscription. Watch live TV and movies anywhere, from any device, with Plex.
@@ -30,18 +30,11 @@ permissions:
   - STORAGE_DOWNLOADS
   - GPU
 releaseNotes: >-
-  This update adds support for GPU passthrough in umbrelOS 1.5.
-
-
-  The release notes of the previous version included the following changes:
-    - Added support for Icelandic in Movie and TV show libraries
-    - New preference for downloads temp directory
-    - Added option to set number of simultaneous background transcodes, including downloads
-    - Fixed issue with collection item counts for smart collections
-    - Resolved error when using Browse option for LiveTV EPG
-    - Improved descriptions for episode and album sorting preferences
-    - Enhanced security to address potential vulnerability
-
+  This update includes several improvements and bug fixes:
+    - Added an audio codec filter for music tracks, support for IPv6-only networks, and DVB Teletext subtitle support.
+    - Updated Plex Web to 4.160.0 and renamed the HEVC encoding option to cover AV1 sources too.
+    - Improved download decision titles, HDR/Dolby Vision/Atmos filters, NFO metadata parsing, local metadata handling, and related collection query performance.
+    - Fixed issues with smart collection and playlist URI validation, unmatched PlexMatch episodes, filename cleanup, DASH manifest content types, and a macOS server crash.
 
   Full release notes are available at https://www.videohelp.com/software/Plex
 submitter: Umbrel

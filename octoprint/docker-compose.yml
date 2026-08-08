@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: octoprint/octoprint:1.11.3@sha256:390e013b1eda8871ae0850c47ed011e4215c95f77972cc6d3c3f344d2fa9e8f6
+    image: octoprint/octoprint:1.11.8@sha256:5ea0181e476597faa2800c991af4ce16903005f46b4c16666a4080ad606310bb
     privileged: true
     volumes:
       - ${APP_DATA_DIR}/data:/octoprint

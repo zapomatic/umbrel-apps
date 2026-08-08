@@ -7,7 +7,7 @@ services:
       APP_PORT: 8000
 
   web:
-    image: ghcr.io/fuzzygrim/yamtrack:0.24.7@sha256:376ee712d72a21a366c34b8034e7af91ac408c4f49720f9a9cfd8ce9ca628cac
+    image: ghcr.io/fuzzygrim/yamtrack:0.25.3@sha256:00acf008bca8171226063bc0f8f08ef7ffe24a10bcebf8676cce335ce312c307
     # does not work yet rootless
     # user: "1000:1000"
     restart: on-failure

@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: nextcloud
 category: files
 name: Nextcloud
-version: "32.0.0"
+version: "34.0.2"
 tagline: Productivity platform that keeps you in control
 description: >-
   Nextcloud puts your data at your fingertips, under your control.
@@ -25,20 +25,19 @@ description: >-
 
   Note: After logging in to Nextcloud please change the password to something secure before sharing the address with anyone.
 releaseNotes: >-
-  This update includes new features, improvements and bug fixes:
-    - 🫧 Global redesign and usability lift
-    - 🎨 New Office UI: colors, tabs, bars
-    - 💪 Performance and stability boost
-    - 🧠 New AI Agency tools unlocked
-    - 💬 Talk threads & live transcription
-    - 📅 Calendar: date poll for participants
-    - 🔎 Intuitive file search
-    - 👥 Teams 2.0 & quick Guest accounts
-    - 👑 Quick presets & many other admin updates
-    - ⚡ Vue3, WebSockets and more OpenAPI for devs
+  Nextcloud 34.0.2 is a follow-up to the recent Nextcloud 34 major update. If you're updating from a pre-34 version, the upgrade may take a few minutes while Nextcloud runs its update steps; leave the app running until it comes back online.
 
 
-  Full release notes are found at https://github.com/nextcloud-releases/server/releases
+  Highlights:
+    - 📁 Fixes issues across Files, WebDAV, sharing, previews, versions, and trash cleanup
+    - 📝 Improves the Text editor, file picker, activity, notifications, Calendar, and Contacts behavior
+    - 🔐 Includes security and dependency maintenance for code-signing revocations, CA certificates, XML handling, and bundled web libraries
+
+
+  If you use extra Nextcloud apps, check for app updates in Nextcloud after upgrading.
+
+
+  Full release notes are found at https://github.com/nextcloud-releases/server/releases/tag/v34.0.2
 developer: Nextcloud GmbH
 website: https://nextcloud.com
 dependencies: []

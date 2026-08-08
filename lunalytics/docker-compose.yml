@@ -7,7 +7,7 @@ services:
       APP_PORT: 2308
 
   web:
-    image: ksjaay/lunalytics:0.10.0@sha256:848c1b8e8be10c0d6f16df96bb159ede3f564be7fe703699662bc9d0623a83c5
+    image: ksjaay/lunalytics:0.10.23@sha256:b1e44f9e647e3e240400eafc914facafbfad2cc87d6c4f02d823226dd9731511
     user: "1000:1000"
     restart: on-failure
     healthcheck:

@@ -2,7 +2,7 @@ manifestVersion: 1
 id: prowlarr
 category: media
 name: Prowlarr
-version: "2.0.5.5160-1"
+version: "2.5.2.5491"
 tagline: Prowlarr is an indexer manager/proxy
 description: >-
   Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps.
@@ -38,15 +38,14 @@ defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
   This update includes several improvements and fixes:
-    - Updated to .NET 8
-    - All usenet and newznab indexers now use redirection
-    - Basic Auth removed, with fallback to Forms authentication
-    - Improved error messages for indexer connection failures
-    - Fixed mobile layout issues when adding indexers
-    - Multiple translation updates and minor bug fixes
+    - Added new DesiGaane and Usenet NZBIndex indexer definitions
+    - Added more IPTorrents sort options, including seeders, leechers, snatches, size, and name
+    - Improved indexer parsing and categories for FileList, IPTorrents, MyAnonamouse, AnimeBytes, and more
+    - Fixed completed task status icons and improved network connection logging
+    - Updated dependencies and translations
 
 
-  Full release notes are found at https://github.com/Prowlarr/Prowlarr/releases.
+  Full release notes can be found at https://github.com/Prowlarr/Prowlarr/releases/tag/v2.5.2.5491
 torOnly: false
 permissions:
   - STORAGE_DOWNLOADS

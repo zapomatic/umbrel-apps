@@ -1,0 +1,68 @@
+manifestVersion: 1.1
+id: stalwart
+name: Stalwart
+tagline: All-in-one Mail & Collaboration server
+category: files
+version: "v0.16.16"
+port: 8745
+description: >-
+  📧 Stalwart is a fast, secure, and scalable open-source server for email, calendars, contacts, and file sharing, built in Rust for top-tier performance and safety.
+
+
+  All-in-One Communication Platform
+    - Full Email Protocol Support: JMAP, IMAP4, POP3, and SMTP with advanced authentication, security, and filtering.
+    - Collaboration Tools: CalDAV calendars, CardDAV contacts, WebDAV file storage and sharing.
+    - Spam & Phishing Protection: AI-powered filtering, DNS blocklists, greylisting, sender reputation tracking, and more.
+
+
+  Powerful Features for Any Scale
+    - Flexible storage backends: PostgreSQL, MySQL, SQLite, S3, Redis, ElasticSearch, and more.
+    - Built-in encryption, 2FA, and automated TLS certificates.
+    - Fault-tolerant, cluster-ready design with Kubernetes and Docker support.
+    - Rich admin dashboard, real-time monitoring, and user self-service tools.
+
+
+  Whether you're running a small private server or a large enterprise deployment, Stalwart delivers modern, secure, and efficient communication you can trust.
+
+
+  These are the configured external port mappings:
+    - **10443:443** (HTTPS)
+    - **10025:25** (SMTP)
+    - **10465:465** (SMTPS)
+    - **10587:587** (SMTP Submission)
+    - **10143:143** (IMAP)
+    - **10993:993** (IMAPS)
+    - **14190:4190** (Sieve)
+    - **10110:110**  (POP3)
+    - **10995:995**  (POP3S)
+
+
+  You can find more details on how to properly setup your instance here: https://stalw.art/docs/install/platform/docker/
+developer: Stalwart Labs
+website: https://stalw.art/
+submitter: al-lac
+submission: https://github.com/getumbrel/umbrel-apps/pull/4112
+repo: https://github.com/stalwartlabs/stalwart
+support: https://github.com/stalwartlabs/stalwart/issues
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+  - 4.jpg
+  - 5.jpg
+releaseNotes: >-
+  ⚠️ If updating from Stalwart v0.15.x or earlier, make sure to have a backup before updating. Umbrel runs the v0.16 migration automatically, but it's recommended to review the upgrading guide: https://github.com/stalwartlabs/stalwart/blob/main/UPGRADING/v0_16.md
+
+
+  Changes since v0.16.15 include:
+    - Adds JMAP Email Delivery Push Notifications
+    - Allows System Sieve scripts to access `orcpt` during the MTA DATA stage
+    - Allows S3 access keys to be read from an environment variable or file
+    - Fixes Meilisearch index checks, login branding, calendar iMIP/alarm formatting, DMARC failure reports, Redis lock cleanup, recovery-mode WebUI downloads, and MTA BDAT/maxMessageSize handling
+
+
+  Full release notes can be found at https://github.com/stalwartlabs/stalwart/releases/tag/v0.16.16
+dependencies: []
+path: "/admin"
+deterministicPassword: true
+defaultUsername: admin

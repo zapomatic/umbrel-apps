@@ -2,7 +2,7 @@ manifestVersion: 1
 id: uptime-kuma
 category: networking
 name: Uptime Kuma
-version: "1.23.16"
+version: "2.5.0"
 tagline: Self-hosted uptime monitoring tool
 description: >
   Uptime Kuma is a self-hosted monitoring tool like Uptime Robot.
@@ -39,9 +39,20 @@ gallery:
 path: ""
 defaultPassword: ""
 releaseNotes: >
-  🚨 This release includes important security fixes for a Local File Inclusion vulnerability in the Real-Browser monitor feature.
+  New features:
+    - Added an NTP monitor type for network time protocol monitoring
+    - Added new Plivo SMS/voice call, Ooredoo SMS, WxPusher SPT, and Flowtriq notification providers
+    - Added rybbit analytics tracking support for status pages and custom SMTP notification headers
+    - Monitoring intervals can now be set beyond the previous 24-day limit
 
 
-  Full release notes can be found at https://github.com/louislam/uptime-kuma/releases
+  Bug fixes and security:
+    - Fixed daily uptime statistics for monitors with large up/down counts
+    - Fixed RSS status descriptions, badge generator URLs, DNS monitor resolver ports, and Steam monitor hostname resolution
+    - Fixed saving the screenshot delay when editing browser engine monitors
+    - Includes upstream dependency security updates and npm supply-chain cooldown hardening
+
+
+  Full release notes can be found at https://github.com/louislam/uptime-kuma/releases/tag/2.5.0
 submitter: Philipp Haussleiter
 submission: https://github.com/getumbrel/umbrel/pull/1148

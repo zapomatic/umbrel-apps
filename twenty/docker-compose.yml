@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: twentycrm/twenty:v1.7.7@sha256:b7bf614d0fcdc69558729d34de848d3353d85d91681f9e2ed00a055951c96149
+    image: twentycrm/twenty:v2.28.0@sha256:e8abc6ac5e7988144379be541325e2f36a4d71ae5cce758226694e28c9d1761e
     user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data/server-local-data:/app/packages/twenty-server/.local-storage
@@ -22,15 +22,18 @@ services:
     depends_on:
       db:
         condition: service_healthy
+      redis:
+        condition: service_started
     healthcheck:
       test: curl --fail http://localhost:3000/healthz
-      interval: 5s
-      timeout: 5s
+      interval: 10s
+      timeout: 30s
       retries: 10
+      start_period: 120s
     restart: on-failure
 
   worker:
-    image: twentycrm/twenty:v1.7.7@sha256:b7bf614d0fcdc69558729d34de848d3353d85d91681f9e2ed00a055951c96149
+    image: twentycrm/twenty:v2.28.0@sha256:e8abc6ac5e7988144379be541325e2f36a4d71ae5cce758226694e28c9d1761e
     user: "1000:1000"
     volumes:
       - ${APP_DATA_DIR}/data/server-local-data:/app/packages/twenty-server/.local-storage
@@ -40,6 +43,7 @@ services:
       SERVER_URL: http://${DEVICE_DOMAIN_NAME}:2020
       REDIS_URL: redis://twenty_redis_1:6379
       DISABLE_DB_MIGRATIONS: "true"
+      DISABLE_CRON_JOBS_REGISTRATION: "true"
       APP_SECRET: 2Gn5puuVCH0SI386E9RqOqHm0hGIAyrB
     depends_on:
       db:
@@ -54,12 +58,13 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/db-data:/var/lib/postgresql/data
     environment:
+      POSTGRES_DB: default
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     healthcheck:
       test: pg_isready -U postgres -h localhost -d postgres
-      interval: 5s
-      timeout: 5s
+      interval: 10s
+      timeout: 30s
       retries: 10
     restart: on-failure
 

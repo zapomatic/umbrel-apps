@@ -2,7 +2,7 @@ manifestVersion: 1
 id: ghostfolio
 category: finance
 name: Ghostfolio
-version: "2.206.0"
+version: "3.43.0"
 tagline: Manage your wealth like a boss
 description: >-
   Ghostfolio is a privacy-first, open source dashboard for your personal finances.
@@ -17,6 +17,8 @@ description: >-
   
   Ghostfolio empowers busy people to keep track of stocks, ETFs or cryptocurrencies
   without being tracked.
+backupIgnore:
+  - data/redis/*
 developer: Ghostfolio
 website: https://ghostfol.io/
 dependencies: []
@@ -31,24 +33,14 @@ path: ""
 deterministicPassword: false
 torOnly: false
 releaseNotes: >-
-  This release includes several improvements and new features:
-    - Improved number formatting in settings dialog for X-ray page rule thresholds
-    - Enhanced usability of the assistant by preselecting the first search result
-    - Improved usability of Cancel/Close buttons in create watchlist item dialog
-    - Restricted retirement date picker selection to future dates in FIRE calculator
-    - Improved support for mutual funds in Financial Modeling Prep service
+  This release includes improvements and fixes:
+    - Added platform logos to account and activity selection dialogs
+    - Improved loading-state handling for redacted values
+    - Protected system tags from deletion or renaming in the admin control panel
+    - Improved Spanish localization
+    - Fixed country weighting parsing for Financial Modeling Prep data
 
 
-  UI and functionality enhancements:
-    - Refactored Open Startup page to standalone
-    - Improved language localization for German
-
-
-  Bug fixes:
-    - Handled exception in get asset profile functionality of Financial Modeling Prep service
-    - Added missing CommonModule import in import activities dialog
-
-
-  Full release notes are found at https://github.com/ghostfolio/ghostfolio/releases
+  Full release notes can be found at https://github.com/ghostfolio/ghostfolio/releases/tag/3.43.0
 submitter: BeauAgst
 submission: https://github.com/getumbrel/umbrel-apps/pull/396

@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
   
   web:
-    image: lnbits/lnbits:v1.2.1@sha256:a896cf5c95e775d95aca3bedf498714380ca2ebccd51bf6c041c97820cd7928d
+    image: lnbits/lnbits:v1.5.6@sha256:6e37fbf9b847c066d7e022e19a018b3df7f12602a370f117857165d36bfb165b
     init: true
     restart: on-failure
     stop_grace_period: 1m
@@ -20,6 +20,8 @@ services:
       LNBITS_HOST: "0.0.0.0"
       LNBITS_PORT: 3007
       LNBITS_DATA_FOLDER: "/data"
+      LNBITS_EXTENSIONS_PATH: "/data"
+      AUTH_HTTPS_ONLY: "false"
 
       # LND
       LNBITS_BACKEND_WALLET_CLASS: LndRestWallet

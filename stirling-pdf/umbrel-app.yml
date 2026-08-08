@@ -3,7 +3,7 @@ id: stirling-pdf
 name: Stirling PDF
 tagline: Merge, split, rotate, and convert PDFs with ease
 category: files
-version: "1.3.2"
+version: "2.14.2"
 port: 27829
 description: >-
   Stirling PDF is a robust, locally hosted web-based PDF manipulation tool that offers a comprehensive set of features to address
@@ -18,7 +18,7 @@ description: >-
 
 
   📄 Page Operations
-  
+
   Stirling PDF provides a full interactive GUI for merging, splitting, rotating, and moving PDFs and their pages. You can view and
   modify multi-page PDFs with custom viewing, sorting, and searching options. On-page edit features like annotation, drawing, and
   adding text and images are also available. You can also reorganize PDF pages into different orders, rotate PDFs in 90-degree
@@ -26,19 +26,19 @@ description: >-
 
 
   🔄️ Conversion Operations
-  
+
   Convert PDFs to and from images, convert any common file to PDF, and convert PDF to Word, PowerPoint, and other formats. You can
   also convert HTML, URLs, and Markdown to PDF.
 
 
   🛡️ Security & Permissions
-  
+
   Add and remove passwords, change or set PDF permissions, add watermarks, certify or sign PDFs, sanitize PDFs, and auto-redact text
   for enhanced security.
 
 
   🛠️ Other Operations:
-  
+
   Add, generate, or write signatures, repair PDFs, detect and remove blank pages, compare two PDFs and show differences in text, add
   images to PDFs, compress PDFs to decrease their filesize, extract images from PDF, add page numbers, perform OCR on PDF, convert PDF/A,
   edit metadata, flatten PDFs, and get all information on a PDF to view or export as JSON.
@@ -54,19 +54,12 @@ gallery:
   - 2.jpg
   - 3.jpg
 releaseNotes: >-
-  This update includes several enhancements and bug fixes:
-
-    - Fixed a login bug for users with accounts older than 14 months
-    - Added support for text removal in auto-redact without image conversion
-    - Improved PDF to image conversion to show annotations and highlights
-    - Added font color option for page numbers
-    - Enhanced split PDF with better file number padding
-    - Improved Table of Contents with bookmark import/export
-    - Added PSD support for image-to-PDF conversion
-    - Added urgency indicators for updates with security patches
-    - Various optimizations and refactors to improve stability and performance
+  Stirling PDF 2.14.2 is a follow-up to the recent 2.12.0 major update. If you're updating from a pre-2.12.0 version, back up your Stirling PDF data before upgrading.
 
 
-  Full release notes are found at https://github.com/Stirling-Tools/Stirling-PDF/releases
+  This hotfix addresses PostgreSQL connection issues that could prevent user data from loading in affected server setups.
+
+  Full release notes can be found at https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v2.14.2
+
 dependencies: []
 path: ""

@@ -5,11 +5,14 @@ services:
     environment:
       APP_HOST: memos_main_1
       APP_PORT: 5230
-      PROXY_AUTH_WHITELIST: "/api/*"
+      PROXY_AUTH_ADD: "false"
 
   main:
-    image: neosmemo/memos:0.25.1@sha256:f1faf27fb60aff4df13fc2c6017baa7b6f8ea684dc9a9bff6f212a01d2efe108
+    image: neosmemo/memos:0.30.0@sha256:71a5b4738d1bed96e92112004054f0888e92791b64eb78afd79077c96e6f9327
     user: "1000:1000"
+    environment:
+      - MEMOS_MODE=prod
+      - MEMOS_PORT=5230
     restart: on-failure
     stop_grace_period: 1m
     volumes:

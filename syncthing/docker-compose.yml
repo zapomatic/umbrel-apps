@@ -7,7 +7,7 @@ services:
       APP_PORT: 8384
 
   server:
-    image: syncthing/syncthing:2.0.10@sha256:3faeb52baa7de3fbe7007cecc6829a4bc71cc6ac62d3967459a8228979c38943
+    image: syncthing/syncthing:2.1.3@sha256:8c8ff37ab6aa8be23b700648a90fa9412e214852e9fd6ea8477c8334792daec0
     restart: on-failure
     stop_grace_period: 1m
     hostname: umbrel

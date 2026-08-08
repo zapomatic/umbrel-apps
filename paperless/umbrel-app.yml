@@ -1,8 +1,8 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: paperless
 category: files
 name: Paperless-ngx
-version: "2.18.4"
+version: "3.0.5"
 tagline: Transform your physical documents into a searchable online archive
 description: >-
   Paperless-ngx is a community-supported open-source document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.
@@ -23,17 +23,15 @@ description: >-
 
   - Paperless stores your documents plain on disk. Filenames and folders are managed by paperless and their format can be configured freely with different configurations assigned to different documents.
 releaseNotes: >-
-  This update includes several new features and improvements:
-
-    - Added a PDF editor for modifying documents directly within Paperless-ngx
-    - Introduced support for webhook restrictions to enhance security
-    - Improved classifier performance for faster document processing
-    - Added Vietnamese language support
-    - Enhanced date parsing capabilities with configurable language settings
-    - Implemented database caching for improved overall performance
+  Paperless-ngx 3.0.5 is a follow-up to the recent Paperless-ngx 3.0 major update. If you're updating from a pre-3.0 version, note that API v1 compatibility has been removed, legacy document/thumbnail encryption is no longer supported, and pre/post-consume scripts no longer receive positional arguments.
 
 
-  Full release notes are found at https://github.com/paperless-ngx/paperless-ngx/releases
+  If you're already on 3.0.x, this update fixes abbreviated relative-date search filters, edit dialog change detection, custom-field validation in bulk operations, AI suggestion caching, monetary decimal formatting, PDF viewer scaling, and born-digital PDF detection.
+
+
+  Full release notes can be found at https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.0.5
+backupIgnore:
+  - data/redisdata/*
 developer: Paperless-ngx Community
 website: https://docs.paperless-ngx.com/
 dependencies: []

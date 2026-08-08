@@ -10,7 +10,7 @@ services:
       PROXY_AUTH_WHITELIST: "/originals/*,/import/*"
   
   web:
-    image: photoprism/photoprism:250707@sha256:2ba3a774ca1acc498096d7a5cb50df9cfecb7e3117a617d648093ff74eec2793
+    image: photoprism/photoprism:260305@sha256:5229f68bce0293320547f35c733de584d7c2d5725a0efbddb68d7a118a8fc21c
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: "1m"

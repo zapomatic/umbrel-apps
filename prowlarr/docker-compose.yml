@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*"
 
   server:
-    image: linuxserver/prowlarr:version-2.0.5.5160@sha256:4f2a6d597845b2f3e19284b1d982b3e0b4bd7c22472c2979c956aa198b83f472
+    image: linuxserver/prowlarr:version-2.5.2.5491@sha256:2f3d31307beba3ba2dd226d191f5f5c14ee3b4d8b49277c64683f5ed97083179
     environment:
       - PUID=1000
       - PGID=1000
@@ -18,7 +18,7 @@ services:
     restart: on-failure
 
   indexer_proxy:
-    image: flaresolverr/flaresolverr:v3.3.17@sha256:5f5661db1e69a6f80ac24d47d9fa5580f6f741ee5ec967818396ae0dacecd7ea
+    image: flaresolverr/flaresolverr:v3.4.6@sha256:7962759d99d7e125e108e0f5e7f3cdbcd36161776d058d1d9b7153b92ef1af9e
     restart: on-failure
 
   mac:

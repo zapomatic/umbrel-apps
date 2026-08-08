@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: sabnzbd
 category: networking
 name: SABnzbd
-version: "4.5.3-gpu"
+version: "5.0.4"
 tagline: The automated Usenet download tool
 description: >-
   SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb.
@@ -30,20 +30,10 @@ repo: https://github.com/sabnzbd/sabnzbd
 support: https://forums.sabnzbd.org/
 port: 9876
 releaseNotes: >-
-  This update adds support for GPU passthrough in umbrelOS 1.5.
+  This update improves RSS handling, fixes Server Test blocking the queue, prevents an idle-jobs crash, and resolves jobs with invalid dates showing as fetching.
 
 
-  The release notes of the previous version included the following changes:
-
-    - Remember if 'Permanently delete' was previously checked
-    - Include all available IP-addresses when selecting the fastest
-    - Fix issues with pre-queue script rejected NZBs and RSS 'Next scan' time
-    - Prevent renaming of .cbr files during verification
-    - Fix crash when 'Show Logging' was enabled with --disable-file-log
-    - API improvements for time_added and history output
-
-
-  Full release notes are available at https://github.com/sabnzbd/sabnzbd/releases
+  Full release notes are available at https://github.com/sabnzbd/sabnzbd/releases/tag/5.0.4
 permissions:
   - STORAGE_DOWNLOADS
   - GPU

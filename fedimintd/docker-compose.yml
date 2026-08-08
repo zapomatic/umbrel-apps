@@ -7,7 +7,7 @@ services:
       APP_PORT: 8175 # ui
 
   fedimintd:
-    image: fedimint/fedimintd:v0.8.1@sha256:725110e9341c15aae356f54b085ac86f02823bbfeef9323a0e48ddf6b98ae204
+    image: fedimint/fedimintd:v0.11.1@sha256:ba23a29ae5b71cf7685c0a4f6594ac92dc9fd6c8915fccc09c8100710177283e
     ports:
       - 8173:8173/tcp # p2p tls
       - 8173:8173/udp # p2p iroh

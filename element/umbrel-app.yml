@@ -2,7 +2,7 @@ manifestVersion: 1
 id: element
 category: social
 name: Element
-version: "1.12.1"
+version: "1.12.25"
 tagline: A glossy Matrix client compatible with Synapse
 description: >-
   Element is a new type of messaging app. You choose where your messages are stored, putting you in control of your data.
@@ -45,19 +45,10 @@ torOnly: false
 submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel/commit/bb10e17a6256db19767af7eaeb93d665ac275b24
 releaseNotes: >-
-  Some key highlights in this release include:
-    - New Room List: Improved filter ordering and persistence when changing spaces
-    - Added emoji suggestion support to the Rich Text Editor
-    - Improved invite dialog user interface
-    - Updated message sound and ringtone for Element
-    - Disabled formatting buttons in Rich Text Editor when using slash commands
-    - Enhanced keyboard navigation in the New Room List
-    - Fixed accessibility issues in the invite dialog
-    - Switched Export and Import icons to match user intuition
-    - Fixed an issue with creating multiple call objects for the same widget
-    - Corrected the link to encryption help documentation
-    - Resolved an issue with HTML export when the "jump to date" feature is enabled
-    - Improved the flow for users who have forgotten their recovery key
+  This release removes support for deprecated Matrix MSC3391/MSC3852 APIs and improves calls and room navigation with automatic left-panel collapse, auto on-call status updates, and collapsed URL previews.
 
 
-  Full release notes can be found at https://github.com/vector-im/element-web/releases
+  It also fixes dialogs that could fail to open, Seshat search panics, room-list scrolling/performance issues, persistent-storage/search warnings, and accessibility/labeling issues.
+
+
+  Full release notes can be found at https://github.com/element-hq/element-web/releases/tag/v1.12.25

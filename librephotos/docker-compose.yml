@@ -7,7 +7,7 @@ services:
       APP_PORT: 80
 
   proxy:
-    image: reallibrephotos/librephotos-proxy:2025w28@sha256:e1fa9b1eb33fbb11b13c7d01940e1ce354958f97580487555fa6c7fc3d91050c
+    image: reallibrephotos/librephotos-proxy:2026w14@sha256:c88c0a65b50ba7e4f65ccc9aa7d5002df9827cb79edb1f88a3a4c130d0b03be4
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/photos:/data
@@ -34,11 +34,11 @@ services:
       retries: 5
 
   frontend:
-    image: reallibrephotos/librephotos-frontend:2025w28@sha256:52a440d336205a900b7d6ed4ecb9fdab906e42bb1321f43de1a7350ed85e1ed0
+    image: reallibrephotos/librephotos-frontend:2026w14@sha256:e2fb909607b1d9552c033a9432446eadb6b693289af2b4b016da55d50724afcb
     restart: on-failure
 
   backend:
-    image: reallibrephotos/librephotos:2025w28@sha256:40fd192cd99a96ee496007e3451c36381a6b376d2dba15e7e81058284d4af96d
+    image: reallibrephotos/librephotos:2026w14@sha256:3f4d6fa163bf41f2cd496aca342307fec8b827fe4a7ced1e7773a050ef7a5dca
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data/photos:/data

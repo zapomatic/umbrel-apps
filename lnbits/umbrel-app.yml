@@ -2,7 +2,7 @@ manifestVersion: 1
 id: lnbits
 category: bitcoin
 name: LNbits
-version: "1.2.1-1"
+version: "1.5.6-patch.1"
 tagline: Multi-user wallet management system
 description: >-
   LNbits is a simple multi-user and account system for Lightning
@@ -28,26 +28,22 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  This update fixes the issue of using the incorrect Docker image.
+  This update makes LNbits extensions more reliable by keeping them installed across app restarts. It helps prevent extensions from unexpectedly becoming inactive or needing to be downloaded again after a restart.
 
 
-  This release brings several improvements and fixes to LNbits.
+  LNbits may restore your installed extensions once while applying this update.
+
+
+  LNbits v1.5.6 improves payment handling, reduces polling for NWC funding sources, and lowers exchange-rate request load by using the LNbits price aggregator.
 
 
   Key highlights include:
-    - Added Strike Wallet integration and payment status filters
-    - Improved UI for large wallet/payment lists and QR code readability
-    - Added QR code generation for wallet keys and URL-safe encoding in CLI
-    - Introduced trimmed mean filtering for exchange rate outliers
-    - Enhanced debugging with masked errors and verbose AES decrypt output
-    - Support for custom Keycloak text/icon and SSL proxy in Docker
-    - Fixed regtest compatibility, wallet navigation, and Eclair rounding issues
-    - Improved error handling and timezone display in payment list
+    - Payment metadata now records the related extension field
+    - NWC funding sources poll less aggressively
+    - Resetting the default wallet keeps the selected funding source
+    - Seed backup is now enforced where required
 
 
-  ⚠️ You may need to clear your browser cache (local storage) after upgrading to see any UI changes.
-
-
-  Full release notes are available at https://github.com/lnbits/lnbits/releases
+  Full release notes are available at https://github.com/lnbits/lnbits/releases/tag/v1.5.6
 submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel/pull/372

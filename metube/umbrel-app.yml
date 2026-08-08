@@ -2,25 +2,22 @@ manifestVersion: 1
 id: metube
 category: media
 name: MeTube
-version: "2025.09.24"
+version: "2026.08.04"
 tagline: Download videos from YouTube
 description: >-
   Download videos from YouTube (and dozens of other sites) directly to your Umbrel.
 developer: Alex Shnitman
 dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
 repo: https://github.com/alexta69/metube
 port: 3700
 releaseNotes: >-
-  This release includes improvements to the dependency management system and container capabilities.
-
-
   Key highlights:
-    - Improved compatibility with future YouTube video downloads
-    - Enhanced version number format for better compatibility
-    - Fixed the page footer to stay at the bottom
+    - Tightens proxy loopback handling so local-network access allowances only apply to the configured proxy
 
 
-  Full release notes can be found at https://github.com/alexta69/metube/releases
+  Full release notes can be found at https://github.com/alexta69/metube/releases/tag/2026.08.04
 support: https://github.com/alexta69/metube/issues
 website: https://github.com/alexta69/metube
 gallery:

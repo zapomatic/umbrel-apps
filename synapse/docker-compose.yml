@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: matrixdotorg/synapse:v1.139.2@sha256:89b1f98ae38bea1d8a7d73295752b083b2ebbdaa8f226697e4637e03f9d0c745
+    image: matrixdotorg/synapse:v1.158.0@sha256:5f868df1f5772907c6dbe973a9b69ab530a5d6bb317c011a3788f7ad78eb1292
     restart: on-failure
     stop_grace_period: 1m
     entrypoint: "bash"

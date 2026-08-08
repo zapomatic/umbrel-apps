@@ -3,7 +3,7 @@ id: audiobookshelf
 name: Audiobookshelf
 tagline: Audiobook and podcast server
 category: media
-version: "2.29.0"
+version: "2.36.0"
 port: 13378
 description: >-
   Features:
@@ -57,28 +57,18 @@ gallery:
   - 2.jpg
   - 3.jpg
 dependencies: []
+permissions:
+  - STORAGE_DOWNLOADS
 path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  New features and improvements:
-    - Added chapter editor tools and enhancements including bulk chapter import
-    - Added book library sort options for "Progress: Started" and "Progress: Finished"
-    - Improved podcast episode matching and downloads
+  This update adds account session management, including a sessions table and controls to log out individual devices or all devices.
 
+  It also includes security fixes for OIDC callback validation, refresh-token authentication paths, root account deletion, and bulk library item download access checks.
 
-  Bug fixes:
-    - Fixed initial page load failing to load library on token refreshes
-    - Fixed library path folder browser not working on latest Windows 11
-    - Fixed various podcast-related issues including episode downloads and matching
+  Password changes now invalidate existing sessions, and podcast episode matching has been improved.
 
-
-  UI/UX improvements:
-    - Updated icons and labels for better clarity
-    - Enhanced accessibility for screen readers
-    - Improved podcast page functionality
-
-
-  Full release notes can be found at https://github.com/advplyr/audiobookshelf/releases
+  Full release notes can be found at https://github.com/advplyr/audiobookshelf/releases/tag/v2.36.0
 submitter: Jasper
 submission: https://github.com/getumbrel/umbrel-apps/pull/302

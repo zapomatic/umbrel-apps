@@ -1,9 +1,9 @@
-manifestVersion: 1
+manifestVersion: 1.1
 id: etherpad  
 name: Etherpad
 tagline: An intuitive tool for real-time collaborative writing
 category: files
-version: "2.5.0"
+version: "3.3.3"
 port: 9002
 description: >-
   ⚙️ The admin panel for Etherpad is accessible at "http://umbrel.local:9002/admin/".
@@ -27,22 +27,20 @@ developer: The Etherpad Foundation
 website: https://etherpad.org/
 submitter: dennysubke
 submission: https://github.com/getumbrel/umbrel-apps/pull/2132
-repo: https://github.com/ether/etherpad-lite
-support: https://github.com/ether/etherpad-lite/issues
+repo: https://github.com/ether/etherpad
+support: https://github.com/ether/etherpad/issues
 gallery:
   - 1.jpg
   - 2.jpg
   - 3.jpg
 releaseNotes: >-
-  This release includes various enhancements and fixes:
-
-    - Updated to express 5.0.0, bringing improvements and fixes
-    - Fixed an issue with the no-skin theme and cookie recentPadList feature
-    - Fixed layout issues with the no-skin theme
-    - Added keybinding meta-backspace to delete to beginning of line
+  This security release fixes a critical unauthenticated arbitrary-file-read vulnerability in Etherpad's `/static/*` handler, plus additional privately reported issues around OpenID Connect cookies/CORS, session fixation, cross-pad writes, and pad ID validation.
 
 
-  Full release notes can be found at https://github.com/ether/etherpad-lite/releases
+  It also migrates the server build to TypeScript 7, fixes PageDown/PageUp navigation across consecutive long wrapped lines, and makes the Docker `plugin_packages` volume mountpoint writable.
+
+
+  Full release notes can be found at https://github.com/ether/etherpad/releases/tag/v3.3.3
 dependencies: []
 path: ""
 defaultUsername: "admin"

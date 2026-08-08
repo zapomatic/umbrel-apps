@@ -1,0 +1,37 @@
+manifestVersion: 1
+id: papra
+name: Papra
+tagline: The minimalistic document archiving platform
+category: files
+version: "26.6.1"
+description: >-
+  Papra is a minimalistic document management and archiving platform. It is designed to be simple to use and accessible to everyone. 
+  
+  
+  Papra is a platform for long-term document storage and management, like a digital archive for your documents.
+
+
+  Forget about that receipt of that gift you bought for your friend last year, or that warranty for your new phone. With Papra, you can easily store, forget, and retrieve your documents whenever you need them.
+developer: Papra
+website: https://papra.app
+submitter: Kanishk Pachauri
+repo: https://github.com/papra-hq/papra
+submission: https://github.com/getumbrel/umbrel-apps/pull/3949
+support: https://github.com/papra-hq/papra/issues
+port: 8112
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+releaseNotes: >-
+  This update improves document update and deletion performance in the search index, especially for large document collections.
+
+
+  It also adds a loading state to the rename document modal, fixes auto-tagging configuration validation, improves AI provider auto-tagging compatibility, and adds better logging for structured data generation errors.
+
+
+  Full release notes can be found at https://github.com/papra-hq/papra/releases/tag/%40papra/app%4026.6.1
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

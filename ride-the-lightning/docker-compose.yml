@@ -7,7 +7,7 @@ services:
       APP_PORT: 3001
   
   web:
-    image: shahanafarooqui/rtl:v0.15.5@sha256:e0b801f92c981073e469615f4d1159a324da8dcca8a79bccdb9a61078fdf8a58
+    image: shahanafarooqui/rtl:v0.15.10@sha256:45a7ce241e1366292de8d87f99df2706ccd9b2e380726ae6965430e7053dde39
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
@@ -22,6 +22,7 @@ services:
         APP_PASSWORD: $APP_PASSWORD
         PORT: 3001
         RTL_CONFIG_PATH: "/data"
+        DB_DIRECTORY_PATH: "/data"
         CHANNEL_BACKUP_PATH: "/data/backup"
         LN_IMPLEMENTATION: "LND"
         BLOCK_EXPLORER_URL: "${APP_RTL_BLOCK_EXPLORER_URL}"
@@ -36,7 +37,7 @@ services:
         BOLTZ_MACAROON_PATH: "/boltz/.boltz-lnd/macaroons"
 
   boltz:
-    image: boltz/boltz-client:2.7.2@sha256:5a901ba46eb56f59b2a08aaa5cfc70f176c999f00cce97214bb1eebc7696e0d8
+    image: boltz/boltz-client:2.11.3@sha256:87ebbd43e75157a86dbe7a6eba897b11edac4b240e3169931d1a1d6821c5e347
     user: "1000:1000"
     restart: "on-failure"
     stop_grace_period: "1m"

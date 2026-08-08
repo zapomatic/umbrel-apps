@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   server:
-    image: owncloud/server:10.15.3@sha256:ce545e72b13f0c3c19fd083aed1ec12facd91ee87993397fd883e853830dc7e9
+    image: owncloud/server:10.16.2@sha256:6dc52267f5c4843da9404ca643ce892f43bb406a540c5233ae1ae1e3826749ea
     # Does not work rootless
     #user: "1000:1000"
     restart: on-failure

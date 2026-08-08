@@ -3,7 +3,7 @@ id: gitlab
 name: GitLab
 tagline: Software. Faster.
 category: developer
-version: "18.4.0"
+version: "19.2.1"
 port: 8929
 description: >-
   ⚠️ This app is RAM-intensive (+6GB recommended) and can take 15-20 minutes to start after installation on low-powered devices.
@@ -58,23 +58,19 @@ gallery:
   - 2.jpg
   - 3.jpg
 releaseNotes: >-
-  This release of GitLab comes with multiple new features and improvements.
+  Updates GitLab CE from 19.2.0 to 19.2.1.
 
 
-  The GitLab UI may be unresponsive for a few minutes after the update, which is completely normal.
+  ⚠️ Upgrade note: GitLab 19.2 is a required upgrade stop. Users updating from pre-19.0 versions will step through earlier required stops and the UI may be unavailable while database and background migrations finish.
+
+  This patch release includes security fixes for pipeline artifact access control, Workhorse senddata requests, virtual registries, OAuth app pages, merge request collaboration permissions, CI token handling in artifacts, import status URLs, branch overwrite protections in relation imports, and confidential issue title handling.
+
+  It also restores AI infrastructure settings after upgrades, fixes self-managed/Dedicated namespace enrollment for Orbit, adjusts tar extraction behavior, and fixes a self-managed key constraint issue.
 
 
-  Key improvements in this release:
-    - GitLab Duo Model Selection is now generally available, giving organizations greater control over AI models powering development workflows
-    - GitLab Knowledge Graph provides rich code intelligence across your codebase, enhancing context for developers and AI agents
-    - End-user model selection for GitLab Duo is now in public beta on GitLab.com
-    - CI/CD job tokens can now authenticate Git push requests to the project's repository
-    - GitLab Duo context exclusion allows control over which project content is excluded as context for GitLab Duo
-    - Expanded AWS region support for GitLab Dedicated
-    - Simulate CI/CD Pipelines against different branches in the pipeline editor
+  Full changelog: https://gitlab.com/gitlab-org/gitlab/-/blob/v19.2.1-ee/CHANGELOG.md
 
-
-  Full release notes are available at: https://about.gitlab.com/releases/2025/09/18/gitlab-18-4-released/
+  Full upgrade notes are available at: https://docs.gitlab.com/update/versions/gitlab_19_changes/
 dependencies: []
 path: ""
 deterministicPassword: true

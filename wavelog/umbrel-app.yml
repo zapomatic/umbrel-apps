@@ -1,7 +1,7 @@
 manifestVersion: 1.1
 id: wavelog
 name: Wavelog
-version: "2.1.1"
+version: "3.0.2"
 tagline: "Amateur radio logging software"
 description: >-
   ⚠️ See below for important set-up instructions.
@@ -35,16 +35,13 @@ dependencies: []
 submitter: LU5JPL
 submission: https://github.com/getumbrel/umbrel-apps/pull/3323
 releaseNotes: >-
-  This is a maintenance release which introduces an interface to DARC's DCL service to sync QSO data into DCL.
+  Wavelog 3.0.2 is a follow-up to the recent Wavelog 3.0.0 major update. If you're updating from a pre-3.0.0 version, note that Wavelog 3.0.0 introduced a new multiuser contesting engine and QSL card designer. If you use WavelogGate, update it alongside this release.
 
 
-  Key highlights in this release include:
-    - Added custom date format in contest logging
-    - Added batch edit QSL method in the Advanced Logbook
-    - Added interfacing with the DARC Awardportal called "DCL"
-    - Added a function to import POTA references from a hunter log in ADIF format
-    - Added WAPC award
-    - Updated OQRS to work for multi-users
+  This release adds Cronmanager "Run Now" buttons, improves Wavelog Worker websocket support and token handling, and refines the new contesting engine with QRG editing, band-based serial counters, hardware-default handling, and better legacy contest imports.
 
 
-  Full release notes can be found at https://github.com/wavelog/wavelog/releases
+  It also improves QSL Designer image uploads, copy-template and unsaved-change handling, redesigns the QSL print queue, adds soft callsign validation for imports, fixes an OQRS vulnerability and malformed-time errors, and includes several ADIF, dashboard, Advanced Logbook, VUCC, and satellite-operation fixes.
+
+
+  Full release notes can be found at https://github.com/wavelog/wavelog/releases/tag/3.0.2

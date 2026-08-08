@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: immich
 category: files
 name: Immich
-version: "v2.0.1-gpu"
+version: "v3.1.0"
 tagline: High-performance photo and video backup solution
 description: >-
   An open-source and high-performance self-hosted backup solution for the videos and photos on your mobile device
@@ -45,24 +45,16 @@ description: >-
 
   - User-defined storage structure
 releaseNotes: >-
-  ⚠️ As usual, please check that your mobile app is compatible with this release of Immich.
+  ⚠️ Immich v3 includes breaking API changes, mostly affecting third-party tools that integrate with Immich. If you're updating from a pre-v3 version, check that your mobile app and any Immich integrations are compatible with this release.
 
 
-  This update adds support for GPU passthrough in umbrelOS 1.5.
+  This release adds web upload wakelock support, undo for archive actions, workflow filters for server file paths and EXIF metadata, and quicker navigation to the maintenance page. It also improves OIDC role-claim syncing, adds an option to invalidate sessions when resetting the admin password, and fixes many web, mobile, upload, and media-viewer issues.
 
 
-  The release notes of the previous version included the following changes:
-    - Fixed asset deletion on share
-    - Fixed activity display in shared albums
-    - Fixed compass button overlapping status bar
-    - Mitigated database lock scenario during full sync
-    - Fixed bottom navigation bar overlay
-    - Fixed storage indicator respect setting
-    - Fixed album selector in favorite view
-    - Various UI and performance improvements
+  Note: the new web upload wakelock feature requires HTTPS, and the Immich mobile app no longer supports iOS 14.
 
 
-  Full release notes are found at https://github.com/immich-app/immich/releases
+  Full release notes can be found at https://github.com/immich-app/immich/releases/tag/v3.1.0
 developer: Alex Tran
 website: https://www.immich.app
 dependencies: []

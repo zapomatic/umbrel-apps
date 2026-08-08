@@ -3,7 +3,7 @@ id: mattermost
 name: Mattermost
 tagline: Team Chat, Open Source, Self-Hosted
 category: social
-version: "10.12.0"
+version: "11.9.0"
 port: 8765
 description: >-
   🚉 Mattermost is an open-source platform designed for secure collaboration throughout the software development lifecycle.
@@ -31,17 +31,14 @@ defaultUsername: ""
 defaultPassword: ""
 dependencies: []
 releaseNotes: >-
-  This release includes multiple new quality of life improvements, bug fixes, and security updates.
+  Mattermost 11.9.0 adds Azure Blob Storage support, image-preview zoom and pan controls, incoming webhook last-triggered visibility, personal access token lifetime controls, and updated bundled plugins for Calls, Boards, Playbooks, Jira, GitLab, and Agents.
 
 
-  Key highlights include:
-    - Enhanced accessibility for autocomplete components, improving screen reader support
-    - Added ability to check if server upgrades are available
-    - Improved error messaging when upgrades are not possible
-    - Disabled "Upgrade Server and Start trial" button when upgrades are unavailable
-    - Fixed security issues
-    - Various bug fixes and performance improvements
+  This release includes database migrations that upstream says do not require downtime, though very large workspaces may take longer to remove orphaned thread memberships.
 
 
-  Full release notes are available at https://docs.mattermost.com/about/mattermost-v10-changelog.html
+  Note: OAuth Dynamic Client Registration redirect URI allowlist patterns now match URL components separately. Admins using DCR allowlists should review their patterns after updating.
+
+
+  Full release notes can be found at https://docs.mattermost.com/product-overview/mattermost-v11-changelog.html#release-v11-9-feature-release
 path: ""

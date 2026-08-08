@@ -3,7 +3,7 @@ id: open-webui
 name: Open WebUI
 tagline: Chat with Ollama models like DeepSeek-R1 and LLama, or use an OpenAI API key
 category: ai
-version: "0.6.33"
+version: "0.11.0"
 port: 2876
 description: >-
   Open WebUI lets you chat with advanced AI models running locally on your own device or connect to online models using an API key.
@@ -37,21 +37,16 @@ defaultPassword: ""
 dependencies:
   - ollama
 releaseNotes: >-
-  Key highlights in this release include:
-    - 🎨 Comprehensive redesign of workspace interface
-    - ⚡ Significant improvements in page initialization and chat performance
-    - 📁 New folder attachment feature for chats
-    - 📱 Android share target support for Progressive Web App
-    - 📊 Support for Vega and Vega-Lite chart visualizations
-    - 🔗 Custom HTTP headers for OpenAI connections
-    - 🤖 Enhancements to Ollama model management
-    - 📊 New layout options for chat overview flow diagram
-    - 🔢 Support for Ollama embedding dimensions parameter
-    - 📄 Improvements to PDF exports and document extraction
+  Open WebUI 0.11.0 includes database schema changes. Back up your Open WebUI data before updating.
 
 
-  ⚠️ System prompts are no longer duplicated in chat requests, which may affect some existing workflows.
+  Key highlights in this release:
+    - Redesigns the interface across chats, folders, workspaces, settings, and the admin panel
+    - Adds sub-agents, chat timers, notification targets, folder pages, chat variables, note attachments, and customizable keyboard shortcuts
+    - Adds open-link sharing, shared folder collaboration, LDAP group synchronization, OAuth/OIDC controls, and more workspace access controls
+    - Improves performance for chats, folders, knowledge bases, uploads, web retrieval, Ollama/API requests, and long streamed responses
+    - Includes security and access-control fixes for file previews, math rendering, sessions, sharing, model/tool access, web fetching, and provider routes
+    - Fixes note handling, PDF/image text extraction, Outlook uploads, Safari blank responses, mobile/sidebar behavior, connection recovery, Ollama model refreshes, and provider/tool-call errors
 
-
-  Full release notes can be found at https://github.com/open-webui/open-webui/releases
+  Full release notes are available at https://github.com/open-webui/open-webui/releases/tag/v0.11.0
 path: ""

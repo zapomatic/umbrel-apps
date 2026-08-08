@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: navidrome
 category: media
 name: Navidrome
-version: "0.58.0"
+version: "0.63.2"
 tagline: Your personal streaming service
 description: >-
   Navidrome is an open source web-based music collection server and streamer.
@@ -41,7 +41,7 @@ developer: Navidrome
 website: https://www.navidrome.org/
 dependencies: []
 repo: https://github.com/navidrome/navidrome
-support: https://github.com/navidrome/navidrome/discussions
+support: https://github.com/navidrome/discussions
 port: 4533
 gallery:
   - 1.jpg
@@ -51,19 +51,15 @@ path: ""
 permissions:
   - STORAGE_DOWNLOADS
 releaseNotes: >-
-  This release includes new features, improvements and bug fixes.
+  This maintenance release fixes plugin loading, scanner symlink handling, and smart playlist validation.
 
 
-  Highlights include:
-    - Manage multiple music libraries with separate folders and user permissions
-    - Switch between libraries easily using the new sidebar selector
-    - Enjoy library-specific statistics for artists and tags
-    - Create playlists with songs from multiple libraries, respecting user access
-    - The user interface is now available in Hindi
-    - The activity panel error icon now resets when clicked
-    - Multiple translation updates
+  Bug fixes include:
+    - Surfaced host service failures when loading plugins
+    - Resolved file symlinks correctly with the production local storage filesystem
+    - Rejected invalid smart playlists that mix top-level "any" and "all" rules
 
 
-  Full release notes can be found at https://github.com/navidrome/navidrome/releases
+  Full release notes can be found at https://github.com/navidrome/navidrome/releases/tag/v0.63.2
 submitter: owmsoton
 submission: https://github.com/getumbrel/umbrel-apps/pull/1232

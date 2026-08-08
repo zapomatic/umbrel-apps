@@ -3,7 +3,7 @@ id: wordpress
 name: WordPress
 tagline: The open source publishing platform of choice for millions of websites worldwide
 category: social
-version: "6.8.2"
+version: "7.0.2"
 port: 8567
 description: >-
   📚 **Empower Your Digital Voice** - The open-source publishing platform trusted by millions. From personal blogs to enterprise portals, WordPress gives everyone the tools to share their stories.
@@ -38,11 +38,14 @@ defaultUsername: ""
 defaultPassword: ""
 dependencies: []
 releaseNotes: >-
-  ⚠️ To fully update your Wordpress instance, you need to go to the admin interface and update from there as well.
+  ⚠️ To fully update your WordPress instance, you need to go to the admin interface and update from there as well.
 
 
-  This minor release includes fixes for 20 Core tickets and 15 Block Editor issues.
+  WordPress 7.0.2 is a security release with fixes for two vulnerabilities.
 
 
-  Full release notes can be found at https://wordpress.org/news/category/releases/
+  It addresses a facilitated SQL injection issue and a REST API batch-route issue that could lead to SQL injection and remote code execution.
+
+
+  Full release notes can be found at https://wordpress.org/documentation/wordpress-version/version-7-0-2/
 path: "/wp-admin"

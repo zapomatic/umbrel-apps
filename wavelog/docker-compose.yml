@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: ghcr.io/wavelog/wavelog:2.1.1@sha256:68b5a8668f754def14591012084f4772e207a4f7fa017e4c5fa8c0e58e0e1ce7
+    image: ghcr.io/wavelog/wavelog:3.0.2@sha256:ceabfd68b1d78ebf4f3b4810f935486597f5501b409e85fe335904c9bf91b586
     environment:
       CI_ENV: docker
     volumes:

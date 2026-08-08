@@ -2,25 +2,19 @@ manifestVersion: 1.1
 id: bitcoin
 category: bitcoin
 name: Bitcoin Node
-version: "1.0.4"
+version: "1.3.0-patch.1"
 tagline: Run your personal node powered by Bitcoin Core
 description: >-
-  Run your Bitcoin node, powered by Bitcoin Core v29.1, and independently store and validate
-  every single Bitcoin transaction with it. Achieve unparalleled
-  privacy by connecting your wallet directly to your node to
-  ensure that your wallet company can’t spy on your transactions,
-  or worse — lie to you.
+  Run your Bitcoin node, powered by Bitcoin Core. Independently store and validate every Bitcoin transaction.
+  Connect your wallet directly to your node for unmatched privacy so your wallet provider can't track your activity - or worse, mislead you.
 
 
-  Plus, transacting with your own node also helps keep the entire
-  Bitcoin network decentralized; win-win!
+  Transacting through your own node also helps keep the Bitcoin network decentralized — win-win.
 
 
-  With over 20 advanced settings, you can take control of your node
-  and customize it to your needs. Control how your node connects to
-  other nodes over Tor, clearnet, and I2P, adjust your daily upload
-  limit, set the maximum mempool size, fine-tune its performance,
-  and much more.
+  With over 20 advanced settings, you're in full control. Choose which version of Bitcoin Core your node runs, 
+  how your node connects to other nodes over Tor, clearnet, and I2P, adjust daily upload limits, set the maximum mempool size, 
+  fine-tune performance, and much more.
 
 
   Don't trust. Verify. On steroids.
@@ -42,10 +36,13 @@ gallery:
 path: ""
 defaultPassword: ""
 releaseNotes: >-
-  This update bumps the underlying Bitcoin Core version to v29.1. Full Bitcoin Core release notes can be found at https://bitcoincore.org/en/releases/29.1/
+  This security update upgrades the bundled Tor sidecar to 0.4.9.11, restoring Tor connectivity and including the latest Tor security fixes. The primary app version is unchanged.
 
 
-  It also adds support for Backups in umbrelOS 1.5.
+  This update adds Bitcoin Core v31.0 and an optional IPC mining interface for Stratum V2 apps.
+
+
+  Note: If you have previously selected a specific Bitcoin Core version in the app settings, your node will continue using that selected version and will not automatically switch to v31.0. You can switch to v31.0 from the settings at any time.
 widgets:
   - id: "stats"
     type: "four-stats"
